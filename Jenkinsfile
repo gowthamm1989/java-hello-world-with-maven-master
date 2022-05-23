@@ -31,6 +31,12 @@ pipeline{
 				sh 'docker push gmuniraju/assignment-1:latest'
 			}
 		}
+		stage('run') {
+
+			steps { sh 'docker pull latest'
+				sh 'docker run latest'
+			}
+		}
 	}
 
 	post {
