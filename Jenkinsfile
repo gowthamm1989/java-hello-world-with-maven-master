@@ -33,7 +33,7 @@ pipeline{
 		}
 		stage('run') {
 
-			steps { sh 'docker pull gmuniraju/assignment-1'
+			steps { sh 'docker pull gmuniraju/assignment-1:latest'
 				sh 'docker run latest'
 			}
 		}
